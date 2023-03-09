@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video</title>
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="js/all.min.js"></script>
+</head>
+<body>
+  <section class="container">
+    <aside class="videosTabsList">
+      <div class="videoTabs">
+        <button class="video">Video1</button>
+        <button class="video">Video2</button>
+        <button class="video">Video3</button>
+        <button class="video">Video4</button>
+        <button class="video">Video5</button>
+        <button class="video">Video6</button>
+        <button class="video">Video7</button>
+        <button class="video">Video8</button>
+        <button class="video">Video9</button>
+        <button class="video">Video10</button>
+        <button class="video">Video11</button>
+        <button class="video">Video12</button>
+        <button class="video">Video13</button>
+        <button class="video">Video14</button>
+        <button class="video">Video15</button>
+        <button class="video">Video16</button>
+      </div>
+     
+    </aside>
+    <section class="videoContainer">
+        <div class="videoParent">
+          <nav class="controls">
+           <span class="playIcon"><i class="fas fa-play-circle"></i></span> 
+           <input type="range" preload="auto|metadata|none" class="seekbar" min="0" max="100" value="0" step="any">
+           <sapn class="soundIcon"><i class="fas fa-volume-up sound"></i></sapn>           <input class="volume" type="range" min="0" max="1" step="0.1" value="0.5">
+=           <select class="playbackRate">
+            <option value="1">x1</option>
+            <option value="0.5">X0.5</option>
+            <option value="1.5">X1.5</option>
+          </select>
+          </nav>
+          <video class="myVideo" src="./videos/video1.mp4" loop  poster="./laptop_top.jpg" >
+            <track kind='subtitles' src='./videos/subtitle.srt' srclang='en' label='English' />
+           </video>
+
+        </div>
+    </section>
+    
+  </section>
+  <script src="js/video.js"></script>
+</body>
+</html>
+    

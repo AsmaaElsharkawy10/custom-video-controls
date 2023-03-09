@@ -1,0 +1,162 @@
+:root
+{
+    --blackColor--:black;
+    --border--: 3px solid var(--blackColor--);
+    --borderRadius--:30px;
+}
+*
+{
+  padding: 0;
+  margin: 0;  
+  box-sizing: border-box;
+}
+body
+{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.container
+{
+    width: 80vw;
+    background-image: radial-gradient(circle, white 60%,gold);
+    height: 80vh;
+    border: var(--border--);
+    border-radius: var(--borderRadius--);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.videosTabsList
+{
+    width: 20%;
+    height: 95%;
+   border: var(--border--);
+   border-radius: var(--borderRadius--);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: radial-gradient(circle, white 10%,orange);
+
+}
+.videoTabs
+{
+    height: 92%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 2px;
+    background-color: white;
+    overflow: scroll;
+}
+.videoTabs::-webkit-scrollbar
+{
+    display: none;
+}
+.videoTabs>button
+{
+    width:80%;
+    padding: 11px 0px;
+    margin: 5px 0px;
+    border: 2px blue solid;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 1s;
+    cursor: pointer;
+    
+}
+.videoTabs>button>a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* hover video tabs contaier */
+.videoTabs:hover
+{
+    background-color: orange;
+}
+/* hover video button */
+.videoTabs>button:hover
+{
+    background-color: blue;
+    color: white;
+    transform: rotate(360deg);
+}
+
+/* video container section */
+.videoContainer
+{
+    width: 70%;
+    border-radius: var(--borderRadius--);
+    border: var(--border--);
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.videoParent
+{
+    width: 80%;
+    /* clip-path: circle(65%); */
+    border-radius: var(--borderRadius--);
+    position: relative;
+    transition: all 1s;
+    display: flex;
+    justify-content:center;
+}
+.videoParent>.controls
+{
+    width: 90%;
+    position: absolute;
+    top: 88%;
+    z-index: 214748364799898;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* display: none; */
+}
+.videoContainer>.videoParent>video
+{
+    width: 100%;
+     border-top:5px solid red;
+    border-bottom:5px solid red;
+    /* clip-path: circle(65%); */
+    border-radius: var(--borderRadius--);
+}
+.videoContainer>.videoParent:hover
+{
+ transform: scale(1.2);
+}
+.playIcon
+{
+ font-size: 1.5rem; 
+ color: white;
+}
+.seekbar
+{
+    margin:0px 20px;
+}
+.soundIcon
+{
+    font-size: 1.4rem;
+    color: white;
+    margin:0px 20px;
+}
+.volume
+{
+    width: 20%;
+}
+
+
+
+
+
+   
